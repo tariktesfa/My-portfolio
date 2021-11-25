@@ -9,7 +9,7 @@
 }
 
 a {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -30,22 +30,22 @@ a {
 
 h1 {
     color: #172B4D;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
 }
 
 p {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 }
 
 .connect {
-    font-family: Poppins;
-    color: #5262f3;
+    font-family: Poppins, sans-serif;
+    color: #3d4ee4;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
