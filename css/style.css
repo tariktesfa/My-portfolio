@@ -1,10 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.nav {
+nav {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
-  list-style-type: none;
   text-align: center;
   padding: 1em;
 }
@@ -15,7 +12,7 @@ a {
   font-weight: bold;
   font-size: 25px;
   line-height: 20px;
-  color: #2b3bce;
+  color: #6070ff;
   text-decoration-line: none;
 }
 
@@ -42,6 +39,7 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
+  color: #344563;
 }
 
 .connect {
@@ -50,4 +48,15 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+li a{
+ color: #344563;
+ top:0%;
+ margin-left: -40px;
+ padding-right: 35px;
 }
