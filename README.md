@@ -1,6 +1,10 @@
 # My-Portfolio
 
 > Portfolio: setup and mobile version skeleton
+
+**The aim of the project is to set up a new repository and prepare it for development using best practices and
+build the first 3 sections of the mobile website using the template provided in Figma**
+
 ## Built With
 
 - HTML
@@ -10,11 +14,6 @@
 
 ![mobile](https://user-images.githubusercontent.com/38283436/143400448-31f5b880-6584-43b0-98c0-f1a9c4f2f34d.PNG)
 
-
-## Getting Started
-
-**The aim of the project is to set up a new repository and prepare it for development using best practices and
-build the first 3 sections of the mobile website using the template provided in Figma**
 ## Authors
 
 👤 **Author1**
