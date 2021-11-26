@@ -1,5 +1,6 @@
 body {
   background-color: #e5e5e5;
+  font-family: Poppins, sans-serif;
 }
 
 nav {
@@ -13,7 +14,6 @@ nav {
 }
 
 a {
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -37,14 +37,12 @@ a {
 
 h1 {
   color: #172b4d;
-  font-family: Poppins, sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
 }
 
 p {
-  font-family: Poppins, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -52,7 +50,6 @@ p {
 }
 
 .connect {
-  font-family: Poppins, sans-serif;
   color: #3d4ee4;
   font-weight: 500;
   font-size: 16px;
@@ -120,7 +117,6 @@ li a {
 .technology a {
   font-size: 12px;
   font-weight: 500;
-  font-family: Poppins, sans-serif;
   color: #6070ff;
   border-radius: 8px;
   text-align: center;
@@ -161,7 +157,6 @@ li a {
 
 .framework p {
   color: #000;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -169,7 +164,6 @@ li a {
 
 .skills p {
   color: #000;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -184,7 +178,6 @@ li a {
 
 .language p {
   color: #000;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -202,7 +195,6 @@ li a {
 }
 
 .outer-item p {
-  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 15px;
   color: #253858;
@@ -236,7 +228,6 @@ li a {
   height: 50px;
   text-align: center;
   padding: 10px;
-  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -253,7 +244,6 @@ li a {
   height: 50px;
   text-align: center;
   padding: 10px;
-  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -266,7 +256,6 @@ li a {
 .flex-item3 a {
   font-size: 13px;
   font-weight: 600;
-  font-family: Poppins, sans-serif;
   display: flex;
   align-content: space-around;
   color: #7a869a;
@@ -279,7 +268,6 @@ li a {
 }
 
 .canopy {
-  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -287,7 +275,6 @@ li a {
 }
 
 .flex-item4 {
-  font-family: Poppins, sans-serif;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -295,7 +282,6 @@ li a {
 
 .flex-item2 h2 {
   color: #172b4d;
-  font-family: Poppins, sans-serif;
   font-weight: bold;
   font-size: 32px;
 }
