@@ -1,5 +1,5 @@
 body {
-  background-color: #E5E5E5;;
+  background-color: #e5e5e5;
 }
 
 nav {
@@ -63,26 +63,26 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  padding: 0px;
-  margin: 0px;
+  padding: 1px;
+  margin: 1px;
 }
 
 li a {
   color: #344563;
-  top: 0%;
   margin-left: -40px;
   padding-right: 35px;
 }
 
 .social-icon {
-   margin-left: 35px;
+  margin-left: 35px;
 }
+
 .main-container {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 100px;
   align-content: space-around;
-  margin-top: 100px 30px 150px 30px;
+  margin: 100px 30px 150px 30px;
 }
 
 .grid-item {
@@ -104,6 +104,7 @@ li a {
 .flex-item3 {
   display: flex;
   align-content: space-around;
+  margin-left: 40px;
 }
 
 .flex-item5 {
@@ -156,7 +157,7 @@ li a {
   flex-direction: column;
 }
 
-.programming img{
+.programming img {
   height: 67px;
   width: 100%;
 }
@@ -166,11 +167,12 @@ li a {
   flex: 1 1 auto;
   justify-content: space-between;
   text-align: center;
-  border-bottom: 1px solid #ACB7C3;
+  border-bottom: 1px solid #acb7C3;
 }
-.about-myself i{
-    padding-top: 22px;
-    align-content: flex-end;
+
+.about-myself i {
+  padding-top: 22px;
+  align-content: flex-end;
 }
 
 .framework {
@@ -178,20 +180,20 @@ li a {
   text-align: center;
   flex: 1 1 auto;
   justify-content: space-between;
-  border-bottom: 1px solid #ACB7C3;
+  border-bottom: 1px solid #acb7c3;
 }
 
 .framework p {
-  color: #000000;
-  font-family: Poppins;
+  color: #000;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
 }
 
 .skills p {
-  color: #000000;
-  font-family: Poppins;
+  color: #000;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -205,8 +207,8 @@ li a {
 }
 
 .language p {
-  color: #000000;
-  font-family: Poppins;
+  color: #000;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -227,55 +229,49 @@ li a {
   border-top-right-radius: 25% 50px;
 }
 
-.contact-icon{
+.contact-icon {
   margin-left: 45px;
   padding-bottom: 20px;
 }
 
-.about-myself button{
+.about-myself button {
   border-radius: 8%;
   border: 1px solid #3d4ee4;
   width: 170px;
   height: 50px;
   text-align: center;
   padding: 10px;
-  font-family: Poppins;
-  font-style: normal;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   background-color: white;
   margin-bottom: 20px;
 }
 
-.flex-item6 button{
-    border-radius: 8%;
-    border: 1px solid #3d4ee4;
-    width: 140px;
-    height: 50px;
-    text-align: center;
-    padding: 10px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    letter-spacing: 0.03em;
-    color: #396DF2;
-    background-color: white;
-    margin-top: 30px;
+.flex-item6 button {
+  border-radius: 8%;
+  border: 1px solid #3d4ee4;
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  color: ##396df2;
+  background-color: white;
+  margin-top: 30px;
 }
 
-.flex-item3 {
-  display: flex;
-  margin-left: 40px;
-}
-
-.flex-item3 a{
+.flex-item3 a {
   font-size: 13px;
   font-weight: 600;
-  font-family: 'poppin', 'san serif';
+  font-family: Poppins, sans-serif;
   display: flex;
   align-content: space-around;
   color: #7a869a;
