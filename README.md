@@ -1,9 +1,8 @@
 # My-Portfolio
 
-> Portfolio: setup and mobile version skeleton
+> Portfolio: Mobile version
 
-**The aim of the project is to set up a new repository and prepare it for development using best practices and
-build the first 3 sections of the mobile website using the template provided in Figma**
+**The aim of the project is build a portfolio website, by creating the mobile website using template provided in Figma.**
 
 ## Built With
 
@@ -12,7 +11,7 @@ build the first 3 sections of the mobile website using the template provided in 
 
 ## Screenshot
 
-![mobile](https://user-images.githubusercontent.com/38283436/143400448-31f5b880-6584-43b0-98c0-f1a9c4f2f34d.PNG)
+![screenshot](https://user-images.githubusercontent.com/38283436/143510071-800ab97b-7712-4fb4-8b73-550b28c70978.png)
 
 ## Authors
 
