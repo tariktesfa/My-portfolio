@@ -112,18 +112,12 @@ li a {
   margin-left: 50px;
 }
 
-.html a {
-  font-size: 12px;
-  font-weight: 500;
-  font-family: Poppins, sans-serif;
-  color: #6070ff;
-  border-radius: 8px;
-  text-align: center;
-  background: #ebebff;
-  padding: 10px;
+.inner-flex-item {
+  display: flex;
+  column-gap: 60px;
 }
 
-.css a {
+.technology a {
   font-size: 12px;
   font-weight: 500;
   font-family: Poppins, sans-serif;
@@ -131,20 +125,7 @@ li a {
   border-radius: 8px;
   text-align: center;
   background: #ebebff;
-  margin-left: 1px;
-  padding: 10px;
-}
-
-.javaScript a {
-  font-size: 12px;
-  padding: 10px;
-  font-weight: 500;
-  font-family: Poppins, sans-serif;
-  color: #6070ff;
-  border-radius: 8px;
-  text-align: center;
-  background: #ebebff;
-  margin-left: 1px;
+  padding: 5px 10px;
 }
 
 .expertise {
@@ -152,14 +133,9 @@ li a {
   flex-direction: column;
 }
 
-.programming {
+.outer-flex {
   display: flex;
   flex-direction: column;
-}
-
-.programming img {
-  height: 67px;
-  width: 100%;
 }
 
 .skills {
@@ -214,6 +190,25 @@ li a {
   font-size: 20px;
 }
 
+.outer-item {
+  display: flex;
+  text-align: center;
+  flex: 1 1 auto;
+  border-color: #acb7c3;
+  border-radius: 8px;
+  background-color: #f7f7F9;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.outer-item p {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+  line-height: 20px;
+}
+
 .grid-item img {
   width: 100%;
   height: 220px;
@@ -235,7 +230,7 @@ li a {
 }
 
 .about-myself button {
-  border-radius: 8%;
+  border-radius: 8px;
   border: 1px solid #3d4ee4;
   width: 170px;
   height: 50px;
@@ -252,7 +247,7 @@ li a {
 }
 
 .flex-item6 button {
-  border-radius: 8%;
+  border-radius: 8px;
   border: 1px solid #3d4ee4;
   width: 140px;
   height: 50px;
@@ -298,7 +293,7 @@ li a {
   color: #344563;
 }
 
-.flex-item2 h1 {
+.flex-item2 h2 {
   color: #172b4d;
   font-family: Poppins, sans-serif;
   font-weight: bold;
