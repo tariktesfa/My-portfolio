@@ -2,7 +2,7 @@
 
 > Portfolio: Mobile version
 
-**This project is a portfolio website, by creating the mobile website using template provided in Figma.**
+**This project is a portfolio website, by creating the mobile version using template provided in Figma.**
 
 ## Built With
 
