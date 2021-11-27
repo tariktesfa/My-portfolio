@@ -2,7 +2,7 @@
 
 > Portfolio: Mobile version
 
-**The aim of the project is build a portfolio website, by creating the mobile website using template provided in Figma.**
+**This project is a portfolio website, by creating the mobile website using template provided in Figma.**
 
 ## Built With
 
@@ -15,10 +15,10 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Tarikwa Tesfa**
 
 - GitHub: [@tariktesfa](https://github.com/tariktesfa)
-- Twitter: [@tariktesfa](https://twitter.com/tariktesfa)
+- Twitter: [@tariktesfa](https://twitter.com/tarik_tesfa)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/tarikwatesfa)
 
 ## 🤝 Contributing
