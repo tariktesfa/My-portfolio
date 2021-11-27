@@ -13,7 +13,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/38283436/143510071-800ab97b-7712-4fb4-8b73-550b28c70978.png)
 
-## Authors
+## Author
 
 👤 **Tarikwa Tesfa**
 
