@@ -353,3 +353,11 @@ li textarea {
   padding-right: 25%;
   padding-left: 35%;
 }
+
+button:hover {
+  background: #8f9afc;
+}
+
+button:active {
+  background: #0416b6;
+}
