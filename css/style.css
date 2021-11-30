@@ -303,16 +303,17 @@ li a {
   padding-left: 20px;
 }
 
-.inner-div h1 {
+.inner-div h2 {
   color: white;
   text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 0;
 }
 
 .inner-div p {
   left: 24px;
   top: 4802px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -345,6 +346,7 @@ li textarea {
   padding-left: 10px;
   font-size: 15px;
   line-height: 24px;
+  padding-top: 10px;
 }
 
 .shape {
