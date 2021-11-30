@@ -1,6 +1,8 @@
 body {
   background-color: #e5e5e5;
   font-family: Poppins, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -10,7 +12,6 @@ nav {
   text-align: center;
   padding: 1em;
   background-color: white;
-  margin: -6px -6px;
 }
 
 a {
@@ -31,7 +32,6 @@ a {
   height: 620px;
   flex-direction: column;
   padding: 20px 20px;
-  margin: -6px -6px;
   border-bottom-left-radius: 25% 50px;
 }
 
@@ -88,7 +88,6 @@ li a {
   height: 580px;
   flex-direction: column;
   padding: 20px 20px;
-  margin: -6px -6px;
   border: 1px solid #e5e5e5;
   border-radius: 3%;
 }
@@ -212,7 +211,6 @@ li a {
   flex-direction: column;
   padding: 20px 20px;
   padding-top: 100px;
-  margin: -6px -6px;
   border-top-right-radius: 25% 50px;
 }
 
@@ -284,4 +282,84 @@ li a {
   color: #172b4d;
   font-weight: bold;
   font-size: 32px;
+}
+
+.inner-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  background-color: #6070ff;
+  background-image: url(../images/contact.png);
+  background-size: 100%;
+  border-top-left-radius: 100px;
+  margin: 100px -17px -15px -15px;
+}
+
+.inner-div {
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.inner-div h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 0;
+}
+
+.inner-div p {
+  left: 24px;
+  top: 4802px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.form {
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+li input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  font-family: Poppins, sans-serif;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  color: #000;
+}
+
+li textarea {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  font-family: Poppins, sans-serif;
+  border-radius: 8px;
+  width: 100%;
+  height: 150px;
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  padding-top: 10px;
+}
+
+.shape {
+  padding-right: 25%;
+  padding-left: 35%;
+}
+
+button:hover {
+  background: #8f9afc;
+  color: white;
+}
+
+button:active {
+  background: #0416b6;
+  color: white;
 }
