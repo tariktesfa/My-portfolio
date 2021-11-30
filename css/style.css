@@ -355,9 +355,9 @@ li textarea {
 }
 
 button:hover {
-  background: #8f9afc;
+  background: white;
 }
 
 button:active {
-  background: #0416b6;
+  background: white;
 }
