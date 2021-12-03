@@ -260,7 +260,7 @@ button:active {
 .expertise {
   display: flex;
   flex-direction: column;
-  padding: 130px 10px 100px 100px;
+  padding: 300px 10px 100px 100px;
   margin-right: 130px;
   width: 500px;
 }
@@ -278,6 +278,7 @@ button:active {
   background: #f7f7f9;
   border-radius: 8px;
   margin-right: 55px;
+  margin-top: 2px;
   padding: 10px 10px 10px 10px;
 }
 
@@ -334,6 +335,7 @@ p.connect {
   text-align: center;
   padding-top: 15px;
   border-bottom: 1px solid #acb7c3;
+  margin-bottom: -10px;
 }
 
 .framework {
