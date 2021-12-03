@@ -248,6 +248,7 @@ button:active {
   flex-direction: row;
   padding: 100px 20px 150px 20px;
   border-top-right-radius: 100px;
+  height: 680px;
 }
 
 .desk-about {
@@ -260,8 +261,8 @@ button:active {
 .expertise {
   display: flex;
   flex-direction: column;
-  padding: 300px 10px 100px 100px;
   margin-right: 130px;
+  margin-left: 80px;
   width: 500px;
 }
 
@@ -324,27 +325,24 @@ p.connect {
 .language {
   display: flex;
   text-align: center;
-  flex: 1 1 auto;
+  margin-top: 120px;
   justify-content: space-between;
 }
 
 .skills {
   display: flex;
-  flex: 1 1 auto;
   justify-content: space-between;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 20px;
   border-bottom: 1px solid #acb7c3;
-  margin-bottom: -10px;
 }
 
 .framework {
   display: flex;
   text-align: center;
-  flex: 1 1 auto;
   justify-content: space-between;
   border-bottom: 1px solid #acb7c3;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .contact {
