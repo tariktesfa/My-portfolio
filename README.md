@@ -1,8 +1,8 @@
 # My-Portfolio
 
-> Portfolio: Mobile version
+> Portfolio: Desktop version
 
-**This project is a portfolio website, by creating the mobile version using template provided in Figma.**
+**This project is a portfolio website, by creating the desktop version using the template provided in Figma.**
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Screenshot
 
-![contact](https://user-images.githubusercontent.com/38283436/144089801-5d45a579-ab49-411a-9ad0-8b31a0e856e1.PNG)
+![desktop](https://user-images.githubusercontent.com/38283436/144626001-db295733-2388-40b9-9a60-ef9c1a029e72.png)
 
 
 ## Author
@@ -35,6 +35,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - To my coding partners
-- Microverse Team
-- Standup Call Team
-- Morning call Team
+- To microverse Team
+- To standup Call Team
+- To morning call Team

@@ -5,6 +5,13 @@ body {
   margin: 0;
 }
 
+.desk-item,
+.desk-item1,
+.flex-item2-desk,
+.technology-desk {
+  display: none;
+}
+
 nav {
   display: flex;
   flex: 1 1 auto;
