@@ -29,10 +29,6 @@
     justify-content: space-between;
   }
 
-  .all-item:hover {
-    transform: scale(1, 0.8);
-  }
-
   .all-item a {
     font-style: normal;
     font-weight: bold;
@@ -57,10 +53,6 @@
     line-height: 20px;
     text-align: center;
     transition: color 2s;
-  }
-
-  .desk-item a:hover {
-    color: #3d4ee4;
   }
 
   .headline-section {
@@ -425,5 +417,13 @@
   .inner-list .flex-item6 button {
     margin-left: 150px;
     margin-top: 1px;
+  }
+
+  .all-item:hover {
+    transform: scale(1, 0.8);
+  }
+
+  .desk-item a:hover {
+    color: #3d4ee4;
   }
 }
