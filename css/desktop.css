@@ -29,6 +29,10 @@
     justify-content: space-between;
   }
 
+  .all-item:hover {
+    transform: scale(1, 0.8);
+  }
+
   .all-item a {
     font-style: normal;
     font-weight: bold;
@@ -52,6 +56,11 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+    transition: color 2s;
+  }
+
+  .desk-item a:hover {
+    color: #3d4ee4;
   }
 
   .headline-section {
