@@ -52,6 +52,7 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+    transition: color 2s;
   }
 
   .headline-section {
@@ -416,5 +417,13 @@
   .inner-list .flex-item6 button {
     margin-left: 150px;
     margin-top: 1px;
+  }
+
+  .all-item:hover {
+    transform: scale(1, 0.8);
+  }
+
+  .desk-item a:hover {
+    color: #3d4ee4;
   }
 }
