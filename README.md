@@ -14,6 +14,11 @@
 ![desktop](https://user-images.githubusercontent.com/38283436/144626001-db295733-2388-40b9-9a60-ef9c1a029e72.png)
 
 
+
+## Live Demo
+
+
+
 ## Author
 
 👤 **Tarikwa Tesfa**
@@ -31,10 +36,3 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- To my coding partners
-- To microverse Team
-- To standup Call Team
-- To morning call Team
