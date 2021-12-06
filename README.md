@@ -12,7 +12,7 @@
 ## Materials required for validation
 
 - follow this link :
- [Linters link]( https://github.com/microverseinc/linters-config/tree/master/html-css)
+ [HTML and CSS Linters link]( https://github.com/microverseinc/linters-config/tree/master/html-css)
 
 ## Screenshot
 
@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-[live demo](https://)
+[live demo](https://tariktesfa.github.io/My-portfolio/)
 
 ## Get Started
 
