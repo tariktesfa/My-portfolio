@@ -11,8 +11,7 @@
 
 ## Screenshot
 
-![desktop](https://user-images.githubusercontent.com/38283436/144626001-db295733-2388-40b9-9a60-ef9c1a029e72.png)
-
+![readme](https://user-images.githubusercontent.com/38283436/144797274-77c91073-1ef7-4150-821c-c89f298873c7.PNG)
 
 
 ## Live Demo
