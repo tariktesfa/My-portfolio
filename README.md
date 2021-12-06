@@ -1,8 +1,8 @@
 # My-Portfolio
 
-> Portfolio: Desktop version
+> Portfolio: Desktop version + Mobile Version
 
-**This project is a portfolio website, by creating the desktop version using the template provided in Figma.**
+**This is a portfolio website created by using the template provided in Figma.**
 
 ## Built With
 
@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@tariktesfa](https://github.com/tariktesfa)
 - Twitter: [@tariktesfa](https://twitter.com/tarik_tesfa)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/tarikwatesfa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tarikwa-tesfa-232a64167/)
 
 ## 🤝 Contributing
 
