@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="(min-width:992px)" href="css/desktop.css">
     <link rel="stylesheet" media="(max-width:992px)" href="css/style.css">
-    <title>Tarikwa Portfolio</title>
+    <title>Tarikwa's Portfolio</title>
 </head>
 
 <body>
@@ -20,11 +20,17 @@
           <nav class="desktop">
               <div class="all-item"><a href="#">My Logo</a></div>
               <div class="desk-item">
-                  <div><a href="#">Portfolio</a></div>
-                  <div><a href="#">About</a></div>
-                  <div><a href="#">Contact</a></div>
+                  <div><a href="#portfolio">Portfolio</a></div>
+                  <div><a href="#about">About</a></div>
+                  <div><a href="#contact">Contact</a></div>
             </div>
-              <div class="item"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+						<div class="mobile-item">
+							<div><a href="#portfolio">Portfolio</a></div>
+							<div><a href="#about">About</a></div>
+							<div><a href="#contact">Contact</a></div>
+							<div class="item menu"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+							<div class="item close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+				    </div>
           </nav>
         </section>
     </header>
@@ -41,7 +47,7 @@
 		<li><a href="#"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
 		</ul>
 </section>
-<section class="Works">
+<section class="Works" id="portfolio">
 	<div class="main-container">
 		<div class="grid-item" id="work-1">
 		<div class="flex-item1"><img src="./images/Snapshoot.png" alt="my tonic project"></div>
@@ -152,7 +158,7 @@
 						</div>
 			</div>
 	</section>
-	<section class="about-myself">
+	<section class="about-myself" id="about">
 		<div class="desk-about">
 			<h1>About <br> Myself</h1>
 			<p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -195,7 +201,7 @@
 					</ul>
 				</div>
 	</section>
-<section class="contact">
+<section class="contact" id="contact">
 		<div class="inner-div">
 			<h2>Contact me</h2>
 			<p id="inner-div">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
