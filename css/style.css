@@ -21,6 +21,10 @@ nav {
   background-color: white;
 }
 
+/* .menu {
+  display: block;
+} */
+
 a {
   font-style: normal;
   font-weight: bold;
@@ -83,20 +87,72 @@ li a {
 
 .main-container {
   display: grid;
-  grid-template-columns: auto;
-  grid-gap: 100px;
-  align-content: space-around;
-  margin: 100px 30px 150px 30px;
+  grid-template-columns: 1fr;
+  margin-top: 100px;
 }
 
 .grid-item {
   background-color: white;
   display: flex;
-  height: 580px;
+  margin-bottom: 100px;
   flex-direction: column;
   padding: 20px 20px;
   border: 1px solid #e5e5e5;
   border-radius: 3%;
+}
+
+.mobile-item {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #6070fff0;
+  text-align: left;
+  display: none;
+}
+
+.mobile-item a {
+  color: #fff;
+}
+
+.technology a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+  border-radius: 8px;
+  text-align: center;
+  background: #ebebff;
+  padding: 5px 10px;
+}
+
+.flex-item3 a {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-content: space-around;
+  color: #7a869a;
+}
+
+.mobile-nav a {
+  font-size: 32px;
+}
+
+.mobile-item .close a {
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.mobile-item .close {
+  padding-top: 50px;
+  text-align: right;
+  padding-right: 38px;
+  font-weight: lighter;
+}
+
+.mobile-nav {
+  padding: 15px 28px;
 }
 
 .flex-item2 {
@@ -118,16 +174,6 @@ li a {
 .inner-flex-item {
   display: flex;
   column-gap: 60px;
-}
-
-.technology a {
-  font-size: 12px;
-  font-weight: 500;
-  color: #6070ff;
-  border-radius: 8px;
-  text-align: center;
-  background: #ebebff;
-  padding: 5px 10px;
 }
 
 .expertise {
@@ -258,14 +304,6 @@ li a {
   margin-top: 30px;
 }
 
-.flex-item3 a {
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  align-content: space-around;
-  color: #7a869a;
-}
-
 .flex-item3 img {
   width: auto;
   height: auto;
@@ -301,7 +339,7 @@ li a {
   background-image: url(../images/contact.png);
   background-size: 100%;
   border-top-left-radius: 100px;
-  margin: 100px -17px -15px -15px;
+  margin-top: 100px;
 }
 
 .inner-div {
