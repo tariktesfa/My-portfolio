@@ -1,14 +1,13 @@
-let menuItem = document.querySelector('.mobile-item');
+const menuItem = document.querySelector('.mobile-item');
 const closeMobileItems = document.querySelectorAll('.closeMenu');
 const displayMobileMenu = () => {
-  menuItem.style.display = "block";
+  menuItem.style.display = 'block';
 }
-
 const closeMobileMenu = () => {
-  menuItem.style.display = "none";
+  menuItem.style.display = 'none';
 }
 
-document.querySelector('.openMenu').addEventListener('click',displayMobileMenu)
+document.querySelector('.openMenu').addEventListener('click', displayMobileMenu);
 closeMobileItems.forEach(element => {
-  element.addEventListener('click',closeMobileMenu)
+  element.addEventListener('click', closeMobileMenu)
 });
