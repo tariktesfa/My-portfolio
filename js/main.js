@@ -11,8 +11,7 @@ const closeMobileMenu = () => {
 document.querySelector('.openMenu').addEventListener('click', displayMobileMenu);
 closeMobileItems.forEach(((element) => element.addEventListener('click', closeMobileMenu)));
 
-const projectDetail = [
-  {
+const projectDetail = [{
     title: 'Tonic',
     exprience: ['CANOPY', 'Back End Dev', '2015'],
     desription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -56,15 +55,16 @@ for (let i = 0; i < projectDetail.length; i++) {
     tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
   }
 
-  for (let j = 0; j < projectDetail[i].exprience.length; j++) {
-    experienceList += `<li><a href="#" class="canopy">${projectDetail[i].exprience[j]}</a></li>`;
+  for (let k = 0; k < projectDetail[i].exprience.length; k++) {
+    experienceList += `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>`;
+    if(k !== projectDetail[i].exprience.length-1)
+      experienceList += `<li><a href="#"><img src="./images/Counter.png" alt="dot"></a></li>`
   }
 
-  document.querySelector('#portfolio').innerHTML
- += `<div class="main-container">
+  document.querySelector('#portfolio').innerHTML += `<div class="main-container">
  <div class="grid-item" id="work-1">
-   <div class="flex-item1"><img src="${projectDetail[i].image}" alt="my tonic project"></div>
-   <div class="desk-item1"><img src="${projectDetail[i].imageMobile}" alt="my tonic project"></div>
+   <div class="flex-item1"><img src="${projectDetail[i].imageMobile}" alt="my tonic project"></div>
+   <div class="desk-item1"><img src="${projectDetail[i].image}" alt="my tonic project"></div>
    <div class="desk-col">
      <div class="flex-item2">
        <h2>${projectDetail[i].title}</h2>
@@ -74,16 +74,15 @@ for (let i = 0; i < projectDetail.length; i++) {
      </div>
      <div class="flex-item3">
        <ul class="inner-element">
-         <li><a href="#" class="canopy">${experienceList}</a></li>
-         <li><a href="#"><img src="./images/Counter.png" alt="dot"></a></li>
+        ${experienceList}
        </ul>
      </div>
      <div class="flex-item4">
-       <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+       <p>${projectDetail[i].desription}</p>
      </div>
      <div class="flex-item5">
        <ul class="inner-flex-item">
-         <li class="technology"><a href="#">${tech}</a></li>
+       ${tech}
        </ul>
      </div>
      <div class="flex-item6"><button>See project</button></div>
