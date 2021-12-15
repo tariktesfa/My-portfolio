@@ -428,8 +428,8 @@
   .inner-list {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
-    padding-right: 200px;
+    margin: auto;
+    width: 100%;
   }
 
   .inner-list .flex-item6 button {
