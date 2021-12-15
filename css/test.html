@@ -1,0 +1,56 @@
+<div class="works-flex">
+<div>
+  <div class="works-flex-pop">
+    <h3 class="intro-text-works">Tonic</h3>
+    <span> <a href="#" class="close-popup">X</a></span>
+</div>
+<ul class=" works-flex-item titles-container">
+    <li class="list-main">CANOPY</li>
+    <li class="titles-item">Back End Dev</li>
+    <li class="titles-item">2015</li>
+</ul>
+</div>
+<div class="works-flex-item work-image">
+    <img src="./images/Snapshoot2.png" class="flex-item1" alt="Tonic project screenshot"/>
+    <img src="./images/Snap2.png" class="desk-item1" alt="Tonic project screenshot"/>
+</div>
+<div class="project-tags">
+    <div class="work-description">
+      <p class="works-flex-item works-description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.
+      </p>
+    </div>
+    <div class="tags">
+        <ul class="lang-container">
+           <li class="lang-group">html</li>
+           <li class="lang-group">css</li>
+           <li class="lang-group">javaScript</li>
+        </ul>
+        <ul>
+          <li class="lang-group-2">Github</li>
+          <li class="lang-group-2">Ruby</li>
+          <li class="lang-group-2">Bootstrap</li>
+        </ul>
+        <div class="btn-tags">
+          <a href="#" class="btn-see-project">See Live
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="btn-see-project">See Source
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+</div>
+</div>
+
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  for (let i = 0; i < e.target.length; i += 1) {
+    if (e.target[i].classList.contains('form-control')) {
+      if (e.target[i].value === '') {
+        e.target[i].nextElementSibling.style.display = 'block';
+      } else {
+        e.target[i].nextElementSibling.textContent = '';
+      }
+    }
+  }
+});

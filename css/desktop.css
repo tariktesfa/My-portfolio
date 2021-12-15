@@ -15,7 +15,8 @@
   .shape,
   .item,
   .flex-item2,
-  .mobile-item {
+  .mobile-item,
+  .mobile {
     display: none;
   }
 

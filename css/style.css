@@ -8,7 +8,8 @@ body {
 .desk-item,
 .desk-item1,
 .flex-item2-desk,
-.technology-desk {
+.technology-desk,
+.lang-container {
   display: none;
 }
 
@@ -44,6 +45,7 @@ a {
   flex-direction: column;
   padding: 20px 20px;
   border-bottom-left-radius: 25% 50px;
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -83,12 +85,12 @@ li a {
 
 .social-icon {
   margin-left: 35px;
+  display: flex;
 }
 
 .main-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 100px;
 }
 
 .grid-item {
@@ -492,11 +494,11 @@ ul.works-flex-item.titles-container {
   margin-top: 15px;
 }
 
-.lang-group-2 {
+.lang-group {
   display: none;
 }
 
-.lang-group {
+#mobile {
   background: #ebebff;
   border-radius: 8px;
   font-size: 12px;
