@@ -127,6 +127,7 @@ li a {
   text-align: center;
   background: #ebebff;
   padding: 5px 10px;
+  margin-left: 0;
 }
 
 .flex-item3 a {
@@ -178,12 +179,14 @@ li a {
 
 .flex-item5 {
   display: flex;
-  margin-left: 50px;
+  /* margin-left: 40px; */
 }
 
 .inner-flex-item {
   display: flex;
-  column-gap: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .expertise {

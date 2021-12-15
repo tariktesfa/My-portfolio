@@ -71,15 +71,10 @@ const projectDetail = [{
 /* Populate object to html elements when the page loads */
 for (let i = 0; i < projectDetail.length; i += 1) {
   let tech = '';
-  let techPop = '';
   let experienceList = '';
 
   for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
     tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
-  }
-
-  for (let j = 0; j < projectDetail[i].popupTech.length; j += 1) {
-    techPop += `<li class="technology"><a href="#">${projectDetail[i].popupTech[j]}</a></li>`;
   }
 
   for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
