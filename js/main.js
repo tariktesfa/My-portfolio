@@ -83,89 +83,169 @@ for (let i = 0; i < projectDetail.length; i += 1) {
   }
 
   for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
-    experienceList += `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>`;
+    experienceList += (k === 0) ? `<li><a href="#" class="canopy">${projectDetail[i].exprience[k]}</a></li>` : `<li><a href="#">${projectDetail[i].exprience[k]}</a></li>`;
     if (k !== projectDetail[i].exprience.length - 1) experienceList += '<li><a href="#"><img src="./images/Counter.png" alt="dot"></a></li>';
   }
-
-  document.querySelector('#portfolio').innerHTML += `<div class="main-container">
- <div class="grid-item" id="work-1">
-   <div class="flex-item1"><img src="${projectDetail[i].imageMobile}" alt="my tonic project"></div>
-   <div class="desk-item1"><img src="${projectDetail[i].image}" alt="my tonic project"></div>
-   <div class="desk-col">
-     <div class="flex-item2">
-       <h2>${projectDetail[i].title}</h2>
-     </div>
-     <div class="flex-item2-desk">
-       <h2>${projectDetail[i].title}</h2>
-     </div>
-     <div class="flex-item3">
-       <ul class="inner-element">
-        ${experienceList}
-       </ul>
-     </div>
-     <div class="flex-item4">
-       <p>${projectDetail[i].desription}</p>
-     </div>
-     <div class="flex-item5">
-       <ul class="inner-flex-item">
-       ${tech}
-       </ul>
-     </div>
-     <div class="flex-item6"><button class="see-project">See project</button></div>
-   </div>
- </div>`;
-
-  document.querySelector('#portfolioPopup').innerHTML += `    <div class="works-flex">
- <div>
-   <div class="works-flex-pop">
-     <h3 class="intro-text-works">${projectDetail[i].title}</h3>
-     <span> <a href="#" class="close-popup">X</a></span>
- </div>
- <ul class=" works-flex-item titles-container">
-     <li class="list-main">${experienceList}</li>
- </ul>
- </div>
- <div class="works-flex-item work-image">
- <img src="${projectDetail[i].imageMobilePopup}" class="desk-item1" alt="${projectDetail[i].title} project screenshot"/>
-     <img src="<img src="${projectDetail[i].imagePopup}" class="desk-item1" alt="${projectDetail[i].title} project screenshot"/>" class="flex-item1" alt="${projectDetail[i].title} project screenshot"/>
- </div>
- <div class="project-tags">
-     <div class="work-description">
-       <p class="works-flex-item works-description">
-         ${projectDetail[i].popDescription}
-       </p>
-     </div>
-     <div class="tags">
-         <ul class="lang-container">
-            <li class="lang-group">${techPop}</li>
-         </ul>
-         <ul>
-           <li class="lang-group-2">${techPop}</li>
-         </ul>
-         <div class="btn-tags">
-           <a href="${projectDetail[i].seeLive}" class="btn-see-project">See Live
-             <i class="fa fa-external-link" aria-hidden="true"></i>
-           </a>
-           <a href="${projectDetail[i].seeSource}" class="btn-see-project">See Source
-             <i class="fa fa-github-square" aria-hidden="true"></i>
-           </a>
-       </div>
-     </div>
- </div>
-</div>`;
+  if(i%2 == 0){
+    document.querySelector('#portfolio').innerHTML += `<div class="main-container">
+  <div class="grid-item" id="work-1">
+    <div class="flex-item1"><img src="${projectDetail[i].imageMobile}" alt="my tonic project"></div>
+    <div class="desk-item1"><img src="${projectDetail[i].image}" alt="my tonic project"></div>
+    <div class="desk-col">
+      <div class="flex-item2">
+        <h2>${projectDetail[i].title}</h2>
+      </div>
+      <div class="flex-item2-desk">
+        <h2>${projectDetail[i].title}</h2>
+      </div>
+      <div class="flex-item3">
+        <ul class="inner-element">
+          ${experienceList}
+        </ul>
+      </div>
+      <div class="flex-item4">
+        <p>${projectDetail[i].desription}</p>
+      </div>
+      <div class="flex-item5">
+        <ul class="inner-flex-item">
+        ${tech}
+        </ul>
+      </div>
+      <div class="flex-item6"><button data-index="${i}" class="see-project">See project</button></div>
+    </div>
+  </div>`;
+  } else {
+    document.querySelector('#portfolio').innerHTML += `<div class="main-container">
+      <div class="grid-item" id="work-1">
+        <div class="desk-col">
+          <div class="flex-item2">
+            <h2>${projectDetail[i].title}</h2>
+          </div>
+          <div class="flex-item2-desk">
+            <h2>${projectDetail[i].title}</h2>
+          </div>
+          <div class="flex-item3">
+            <ul class="inner-element">
+              ${experienceList}
+            </ul>
+          </div>
+          <div class="flex-item4">
+            <p>${projectDetail[i].desription}</p>
+          </div>
+          <div class="flex-item5">
+            <ul class="inner-flex-item">
+            ${tech}
+            </ul>
+          </div>
+          <div class="flex-item6"><button data-index="${i}" class="see-project">See project</button></div>
+        </div>
+        <div class="flex-item1"><img src="${projectDetail[i].imageMobile}" alt="my tonic project"></div>
+        <div class="desk-item1"><img src="${projectDetail[i].image}" alt="my tonic project"></div>
+      </div>`;
+  }
 }
 /* End of project detail population when the pages loads */
 
 /* Display Popup modal */
 
 const popupModal = document.querySelector('#portfolioPopup');
-const displayPopupModal = () => {
+const displayPopupModal = (i) => {
+  let tech = '';
+  let techPop = '';
+  let experienceList = '';
+
+  for (let j = 0; j < projectDetail[i].technologies.length; j += 1) {
+    tech += `<li class="technology"><a href="#">${projectDetail[i].technologies[j]}</a></li>`;
+  }
+
+  for (let j = 0; j < projectDetail[i].popupTech.length; j += 1) {
+    techPop += `<li class="lang-group">${projectDetail[i].popupTech[j]}</li>`;
+  }
+
+  for (let k = 0; k < projectDetail[i].exprience.length; k += 1) {
+    experienceList += (k == 0) ? `<li class="list-main">${projectDetail[i].exprience[k]}</li>` : `<li class="titles-item">${projectDetail[i].exprience[k]}</li>`;
+  }
+  document.querySelector('#portfolioPopup').innerHTML = 
+  `
+  <div class="works-flex">
+      <div>
+        <div class="works-flex-pop">
+          <h3 class="intro-text-works">${projectDetail[i].title}</h3>
+          <span> <a onclick="closePopupModal()" href="javascript:void()" class="close-popup">X</a></span>
+      </div>
+      <ul class=" works-flex-item titles-container">
+      ${experienceList}
+      </ul>
+      </div>
+      <div class="works-flex-item work-image">
+          <img src="${projectDetail[i].imageMobilePopup}" class="flex-item1" alt="${projectDetail[i].title} project screenshot"/>
+          <img src="${projectDetail[i].imagePopup}" class="desk-item1" alt="${projectDetail[i].title} project screenshot"/>
+      </div>
+      <div class="project-tags">
+          <div class="work-description">
+            <p class="works-flex-item works-description">
+              ${projectDetail[i].popDescription}
+            </p>
+          </div>
+          <div class="tags">
+              <ul class="lang-container">
+              ${techPop}
+              </ul>
+              <div class="btn-tags">
+                <a href="${projectDetail[i].seeLive}" class="btn-see-project">See Live
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                <a href="${projectDetail[i].seeSource}" class="btn-see-project">See Source
+                  <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+            </div>
+          </div>
+      </div>
+      </div>
+  `
+//   document.querySelector('#portfolioPopup').innerHTML = `<div class="works-flex">
+//  <div>
+//    <div class="works-flex-pop">
+//      <span> <a onclick="closePopupModal()" href="javascript:void()" class="close-popup">X</a></span>
+//  </div>
+//  <ul class=" works-flex-item titles-container">
+//      <li class="list-main">${experienceList}</li>
+//  </ul>
+//  </div>
+//  <div class="works-flex-item work-image">
+//  <img src="${projectDetail[i].imageMobilePopup}" class="desk-item1" alt="${projectDetail[i].title} project screenshot"/>
+//      <img src="<img src="${projectDetail[i].imagePopup}" class="desk-item1" alt="${projectDetail[i].title} project screenshot"/>" class="flex-item1" alt="${projectDetail[i].title} project screenshot"/>
+//  </div>
+//  <div class="project-tags">
+//      <div class="work-description">
+//        <p class="works-flex-item works-description">
+//          ${projectDetail[i].popDescription}
+//        </p>
+//      </div>
+//      <div class="tags">
+//          <ul class="lang-container">
+//             <li class="lang-group">${techPop}</li>
+//          </ul>
+//          <ul>
+//            <li class="lang-group-2">${techPop}</li>
+//          </ul>
+//          <div class="btn-tags">
+//            <a href="${projectDetail[i].seeLive}" class="btn-see-project">See Live
+//              <i class="fa fa-external-link" aria-hidden="true"></i>
+//            </a>
+//            <a href="${projectDetail[i].seeSource}" class="btn-see-project">See Source
+//              <i class="fa fa-github-square" aria-hidden="true"></i>
+//            </a>
+//        </div>
+//      </div>
+//  </div>
+// </div>`;
   popupModal.style.display = 'block';
 };
 const closePopupModal = () => {
   popupModal.style.display = 'none';
 };
-document.querySelector('.see-project').addEventListener('click', displayPopupModal);
-document.querySelector('.close-popup').addEventListener('click', closePopupModal);
+
+document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
 /* End of display popup modal */

@@ -512,9 +512,14 @@
     margin-left: 10px;
   }
 
+  .tags {
+    width: 25%;
+  }
+
   .tags > ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     margin-left: 5px;
     margin-top: 15px;
