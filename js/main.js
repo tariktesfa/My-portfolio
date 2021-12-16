@@ -178,10 +178,22 @@ const closeModal = document.querySelector('#portfolioPopup');
 const closePopupModal = () => {
   closeModal.style.display = 'none';
 };
-
-document.querySelector('.close-popup').addEventListener('click', closePopupModal());
 /* End of display popup modal */
 
 /* Contact Form validation */
-
+document.querySelector('#form').addEventListener('submit', (e) => {
+  for (let i = 0; i < e.target.length; i += 1) {
+    if(e.target[i].classList.contains('form-control')) {
+      if (e.target[i].value === '') {
+        e.target[i].nextElementSibling.style.display = 'block'
+        e.target[i].nextElementSibling.textContent = `Please enter your ${e.target[i].getAttribute('placeholder')}`
+        e.preventDefault()
+      } else {
+        e.target[i].nextElementSibling.style.display = 'none'
+        e.target[i].nextElementSibling.textContent = ``
+      }
+    }
+  }
+});
 /* End of Contact Form Validation */
+

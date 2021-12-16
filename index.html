@@ -121,16 +121,16 @@
         <p id="inner-div">If you have an application you are interested in developing, a feature that you need
           built or a project that needs coding. I’d love to help with it </p>
       </div>
-      <form action="https://formspree.io/f/xbjwrzvy" class="form" method="post">
+      <form action="https://formspree.io/f/xbjwrzvy" id="form" class="form" method="post">
         <ul class="inner-list">
-          <li><input type="text" class="form-control" placeholder="Fullname" name="name" id="name" size="40" maxlength="30">
-          </li>
-          <span class="error" id="full-name"></span>
+          <li><input type="text" class="form-control" placeholder="Full name" name="name" id="name" size="40" maxlength="30">
+          <span class="error" id="full-name"></span></li>
+          
           <li><input type="email" class="form-control" name="email" id="email" placeholder="Email address"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></li>
-          <span class="error" id="user-email"></span>   
-          <li><textarea name="text" class="form-control" id="text" placeholder="Message"></textarea></li>
-          <span class="error" id="message"></span>
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><span class="error" id="user-email"></span>  </li>
+           
+          <li><textarea name="text" class="form-control" id="text" placeholder="Message"></textarea><span class="error" id="message"></span></li>
+          
           <li class="flex-item6" id="submit-btn"><button type="submit">Get In Touch</button></li>
           <span class="error" id="submit"></span>
           <li class="shape"><img src="./images/Shape.png" alt="shape"></li>
