@@ -188,24 +188,24 @@ document.querySelector('#form').addEventListener('submit', (e) => {
     if (e.target[i].classList.contains('form-control')) {
       if (e.target[i].value === '') {
         // e.target[i].nextElementSibling.style.display = 'block';
-        e.target[i].nextElementSibling.innerText += `Please enter your ${e.target[i].getAttribute('placeholder')}`;
-        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].parentElement.nextElementSibling.innerText = `Please enter your ${e.target[i].getAttribute('placeholder')}`;
+        e.target[i].parentElement.nextElementSibling.style.color = 'red';
         e.preventDefault();
       } else if (e.target[i].type === 'input' && e.target[i].value.length > e.target[i].getAttribute('maxlength')) {
-        e.target[i].nextElementSibling.innerText += `The maximum number of character is ${e.target[i].getAttribute('maxlength')}`;
-        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].parentElement.nextElementSibling.innerText = `The maximum number of character is ${e.target[i].getAttribute('maxlength')}`;
+        e.target[i].parentElement.nextElementSibling.style.color = 'red';
         e.preventDefault();
       } else if (e.target[i].type === 'email' && e.target[i].value !== e.target[1].value.toLowerCase()) {
-        e.target[i].nextElementSibling.innerText += 'Please enter your email in lowercase';
-        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].parentElement.nextElementSibling.innerText = 'Please enter your email in lowercase';
+        e.target[i].parentElement.nextElementSibling.style.color = 'red';
         e.preventDefault();
       } else if (e.target[i].type === 'email' && regex.test(e.target[i].value) !== e.target[i].value) {
-        e.target[i].nextElementSibling.textContent = 'Please enter a valid email address';
-        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].parentElement.nextElementSibling.textContent = 'Please enter a valid email address';
+        e.target[i].parentElement.nextElementSibling.style.color = 'red';
         e.preventDefault();
       } else {
-        e.target[i].nextElementSibling.style.display = 'none';
-        e.target[i].nextElementSibling.innerText += '';
+        e.target[i].parentElement.nextElementSibling.style.display = 'none';
+        e.target[i].parentElement.nextElementSibling.innerText = '';
       }
     }
   }
