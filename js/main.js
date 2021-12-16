@@ -174,26 +174,43 @@ const displayPopupModal = (i) => {
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
-const closeModal = document.querySelector('#portfolioPopup');
-const closePopupModal = () => {
-  closeModal.style.display = 'none';
-};
+// const closeModal = document.querySelector('#portfolioPopup');
+// const closePopupModal = () => {
+//   closeModal.style.display = 'none';
+// };
 /* End of display popup modal */
 
 /* Contact Form validation */
+// eslint-disable-next-line no-useless-escape
+const regex = '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$';
 document.querySelector('#form').addEventListener('submit', (e) => {
   for (let i = 0; i < e.target.length; i += 1) {
-    if(e.target[i].classList.contains('form-control')) {
+    if (e.target[i].classList.contains('form-control')) {
       if (e.target[i].value === '') {
-        e.target[i].nextElementSibling.style.display = 'block'
-        e.target[i].nextElementSibling.textContent = `Please enter your ${e.target[i].getAttribute('placeholder')}`
-        e.preventDefault()
+        e.target[i].nextElementSibling.style.display = 'block';
+        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].nextElementSibling.textContent = `Please enter your ${e.target[i].getAttribute('placeholder')}`;
+        e.preventDefault();
+      } else if (e.target[i].type === 'input' && e.target[i].value.length > e.target[i].getAttribute('maxlength')) {
+        e.target[i].nextElementSibling.style.display = 'block';
+        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].nextElementSibling.textContent = `The maximum number of character is ${e.target[i].getAttribute('maxlength')}`;
+        e.preventDefault();
+      } else if (e.target[i].type === 'email' && e.target[i].value !== e.target[1].value.toLowerCase()) {
+        e.target[i].nextElementSibling.style.display = 'block';
+        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].nextElementSibling.textContent = 'Please enter your email in lowercase';
+        e.preventDefault();
+      } else if (e.target[i].type === 'email' && regex.test(e.target[i].value) !== e.target[i].value) {
+        e.target[i].nextElementSibling.style.display = 'block';
+        e.target[i].nextElementSibling.style.color = 'red';
+        e.target[i].nextElementSibling.textContent = 'Please enter a valid email address';
+        e.preventDefault();
       } else {
-        e.target[i].nextElementSibling.style.display = 'none'
-        e.target[i].nextElementSibling.textContent = ``
+        e.target[i].nextElementSibling.style.display = 'none';
+        e.target[i].nextElementSibling.textContent = '';
       }
     }
   }
 });
 /* End of Contact Form Validation */
-
