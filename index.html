@@ -123,12 +123,16 @@
       </div>
       <form action="https://formspree.io/f/xbjwrzvy" class="form" method="post">
         <ul class="inner-list">
-          <li><input type="text" placeholder="Enter your name" name="name" id="name" size="40" maxlength="30" required>
+          <li><input type="text" class="form-control" placeholder="Fullname" name="name" id="name" size="40" maxlength="30">
           </li>
-          <li><input type="email" name="email" id="email" placeholder="alexandra@gmail.com"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></li>
-          <li><textarea name="text" id="text" placeholder="Write your message here" required></textarea></li>
-          <li class="flex-item6"><button type="submit">Get In Touch</button></li>
+          <span class="error" id="full-name"></span>
+          <li><input type="email" class="form-control" name="email" id="email" placeholder="Email address"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></li>
+          <span class="error" id="user-email"></span>   
+          <li><textarea name="text" class="form-control" id="text" placeholder="Message"></textarea></li>
+          <span class="error" id="message"></span>
+          <li class="flex-item6" id="submit-btn"><button type="submit">Get In Touch</button></li>
+          <span class="error" id="submit"></span>
           <li class="shape"><img src="./images/Shape.png" alt="shape"></li>
         </ul>
       </form>

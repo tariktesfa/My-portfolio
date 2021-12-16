@@ -181,3 +181,7 @@ const closePopupModal = () => {
 
 document.querySelector('.close-popup').addEventListener('click', closePopupModal());
 /* End of display popup modal */
+
+/* Contact Form validation */
+
+/* End of Contact Form Validation */
