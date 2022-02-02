@@ -135,7 +135,7 @@ const displayPopupModal = (i) => {
       <div>
         <div class="works-flex-pop">
           <h3 class="intro-text-works">${projectDetail[i].title}</h3>
-          <span> <a onclick="closePopupModal()" href="javascript:void()" class="close-popup">X</a></span>
+          <span> <a onclick="closePopupModal()" href="" class="close-popup">X</a></span>
       </div>
       <ul class="works-flex-item titles-container">
       ${experienceList}
