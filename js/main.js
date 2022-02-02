@@ -174,10 +174,10 @@ const displayPopupModal = (i) => {
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
-// const closeModal = document.querySelector('#portfolioPopup');
-// const closePopupModal = () => {
-//   closeModal.style.display = 'none';
-// };
+const closeModal = document.querySelector('#portfolioPopup');
+const closePopupModal = () => {
+  closeModal.style.display = 'none';
+};
 /* End of display popup modal */
 
 /* Contact Form validation */
