@@ -10,18 +10,18 @@ document.querySelector('.openMenu').addEventListener('click', displayMobileMenu)
 closeMobileItems.forEach(((element) => element.addEventListener('click', closeMobileMenu)));
 /* Project Detail objects */
 const projectDetail = [{
-  title: 'Tonic',
-  exprience: ['CANOPY', 'Back End Dev', '2015'],
-  desription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  popDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+  title: 'DATStar Technology',
+  exprience: ['Website', 'Front End Dev', '2020'],
+  desription: 'A Website for DAT Star Technology which is a Speed limiter and GPS installation company.',
+  popDescription: 'By the website they provide a system for thier clients that allows to remotely control their assets. Thier system assists the client in managing vehicle usage, fuel, tire performance, driver performance, and vehicle maintenance. They Protect and take 100% control of clients vehicles with the latest, advanced and effective technology and experience peace of mind by knowing the real time location of your vehicle at all time.',
   technologies: ['html', 'css', 'javascript'],
-  popupTech: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  image: './images/Snap1.png',
-  imageMobile: './images/Snapshoot1.png',
-  imagePopup: './images/Snap1.png',
-  imageMobilePopup: './images/Snapshoot1.png',
-  seeLive: 'https://tariktesfa.github.io/My-portfolio/',
-  seeSource: 'https://github.com/tariktesfa/My-portfolio',
+  popupTech: ['html', 'css', 'javaScript', 'github'],
+  image: './images/desktop.png',
+  imageMobile: './images/mobile.png',
+  imagePopup: './images/popup.png',
+  imageMobilePopup: './images/mobile.png',
+  seeLive: 'https://tariktesfa.github.io/DATStar-Technology/',
+  seeSource: 'https://github.com/tariktesfa/DATStar-Technology',
 },
 {
   title: 'Multi-Post Stories',
@@ -174,10 +174,10 @@ const displayPopupModal = (i) => {
 };
 document.querySelectorAll('.see-project').forEach((row) => row.addEventListener('click', () => displayPopupModal(row.getAttribute('data-index'))));
 
-const closeModal = document.querySelector('#portfolioPopup');
-const closePopupModal = () => {
-  closeModal.style.display = 'none';
-};
+// const closeModal = document.querySelector('#portfolioPopup');
+// const closePopupModal = () => {
+//   closeModal.style.display = 'none';
+// };
 /* End of display popup modal */
 
 /* Contact Form validation */
