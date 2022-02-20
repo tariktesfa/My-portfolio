@@ -10,10 +10,10 @@ document.querySelector('.openMenu').addEventListener('click', displayMobileMenu)
 closeMobileItems.forEach(((element) => element.addEventListener('click', closeMobileMenu)));
 /* Project Detail objects */
 const projectDetail = [{
-  title: 'Website',
+  title: 'DATStar Technology',
   exprience: ['Website', 'Front End Dev', '2020'],
   desription: 'A Website for DAT Star Technology which is a Speed limiter and GPS installation company.',
-  popDescription:'By the website they provide a system for thier clients that allows to remotely control their assets. Thier system assists the client in managing vehicle usage, fuel, tire performance, driver performance, and vehicle maintenance. They Protect and take 100% control of clients vehicles with the latest, advanced and effective technology and experience peace of mind by knowing the real time location of your vehicle at all time.',
+  popDescription: 'By the website they provide a system for thier clients that allows to remotely control their assets. Thier system assists the client in managing vehicle usage, fuel, tire performance, driver performance, and vehicle maintenance. They Protect and take 100% control of clients vehicles with the latest, advanced and effective technology and experience peace of mind by knowing the real time location of your vehicle at all time.',
   technologies: ['html', 'css', 'javascript'],
   popupTech: ['html', 'css', 'javaScript', 'github'],
   image: './images/desktop.png',
